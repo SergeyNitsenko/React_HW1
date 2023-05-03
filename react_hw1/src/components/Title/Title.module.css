@@ -1,0 +1,17 @@
+.title {
+  font-family: Arvo sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #ffffff;
+  margin-top: 107px;
+}
+
+.titleContent {
+  color: #ffffff;
+  max-width: 540px;
+  font-family: OpenSans sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
