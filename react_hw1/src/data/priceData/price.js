@@ -8,7 +8,8 @@ export const price = [
         products: 'Unlimited products',
         downloads: 'Unlimited downloads',
         memory: '1 000 GB',
-        button: 'LEARN MORE'
+        button: 'LEARN MORE',
+        sale:false
     },
     {
         id: 2,
@@ -19,7 +20,8 @@ export const price = [
         products: 'Unlimited products',
         downloads: 'Unlimited downloads',
         memory: '1 000 GB',
-        button: 'LEARN MORE'
+        button: 'LEARN MORE',
+        sale: true
     },
     {
         id: 3,
@@ -29,6 +31,7 @@ export const price = [
         products: 'Unlimited products',
         downloads: 'Unlimited downloads',
         memory: '1 000 GB',
-        button: 'LEARN MORE'
+        button: 'LEARN MORE',
+        sale: false
     }
 ]

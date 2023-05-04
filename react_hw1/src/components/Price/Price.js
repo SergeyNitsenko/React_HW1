@@ -6,14 +6,17 @@ export const Price = () => {
         <div className={styles.container}>
             {
                 price.map(item => {
+                    const sale = item.sale ? styles.colorPrise : styles.normalPrice
+                    const button = item.sale ? styles.buttonBackground : styles.button
+                    const border = item.sale ? styles.containerPriceBorder :styles.containerPrice
                     return (
-                        <div key={item.id} className={styles.containerPrice}>
-                            <h5>{item.title}</h5>
-                            <span><sup>{item.currency}</sup>{item.price}</span>
-                            <p>{item.products}</p>
-                            <p>{item.downloads}</p>
-                            <p>{item.memory}</p>
-                            <button>{item.button}</button>
+                        <div key={item.id} className={border}>
+                            <p className={styles.titliPrice}>{item.title}</p>
+                            <span className={sale}><sup className={styles.colorSup}>{item.currency}</sup>{item.price}</span>
+                            <p className={styles.textPrice}>{item.products}</p>
+                            <p className={styles.textPrice}>{item.downloads}</p>
+                            <p className={styles.memory}>{item.memory}</p>
+                            <button className={button}>{item.button}</button>
                         </div>
                     )
                 })
